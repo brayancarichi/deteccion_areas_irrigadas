@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detección de áreas irrigadas en Nuevo León</title>
+
+  <!-- 
+    - favicon
+  -->
+  
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Insumos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-nav-link>Realización</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>Factores</a>
+          </li>
+
+          
+          
+
+          
+
+        </ul>
+      </nav>
+
+     
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/Areas_irrigadas.png" width="904" height="843" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">IDENTIFICACIÓN DE SUPERFICIE DE RIEGO</h2>
+
+            <p class="section-text">
+             Se puede acceder a la plataforma interactiva presionando el siguiente botón:
+            </p>
+
+            <form action="" class="hero-form">
+              <input type="text" name="email_address" placeholder="" aria-label="Enter Your Email"
+                >
+
+              <button type="submit" class="btn btn-primary"><a href="https://ee-brayanmurillogutierrez988.projects.earthengine.app/view/deteccion-de-areas-irrigadas" target="_blank">Plataforma interactiva</a></button>
+            </form>
+
+            <ul class="hero-list">
+
+              
+
+              
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title">¿Qué elementos se tomaron en cuenta para hacer el análisis?</h2>
+
+          <p class="section-text">
+            Se utilizó la teledetección la cual es la ciencia que se encarga de obtener, almacenar y procesar información satelital. Esto nos permite hacer análisis a pequeña y gran escala de manera extremadamente rápida. Además, se utilizaron redes neuronales para la detección y clasificación de los diferentes usos del suelo, incluyendo áreas irrigadas.  
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/MDE.png" width="728" height="344" loading="lazy" alt="support"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.inegi.org.mx/contenidos/temas/relieve/continental/doc/mde.pdf" class="card-title">MODELOS DIGITALES DE ELEVACIÓN</a>
+                  </h3>
+
+                  <p class="card-text">
+                    En el proceso de clasificación de las coberturas de uso de suelo es fundamental el utilizar Modelos Digitales de Elevación (MDE). Esto ya que a partir de los MDE podemos  obtener las pendientes y a partir de estas se pueden discriminar coberturas de uso de suelo que no nos interesan. 
+                  </p>
+
+                  <a href="https://www.inegi.org.mx/contenidos/temas/relieve/continental/doc/mde.pdf" class="btn-link">
+                    <span class="span">Conocer más</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/sentinel2.jpg" width="728" height="344" loading="lazy" alt="Engagement"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2" class="card-title">Imágenes satelitales Sentinel 2</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Las imágenes satelitales Sentinel 2 son las mas completas ya que cuentan con una resolución espacial de 10 metros y una resolución temporal de 5 días (tomando en cuenta toda la constelación). A partir de ellas podemos crear indices de vegetación como el NDVI o EVI e indices de humedad como el NDWI. 
+                  </p>
+
+                  <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2" class="btn-link">
+                    <span class="span">Conocer más</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/random_forest.png" width="728" height="344" loading="lazy" alt="Marketing"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html" class="card-title">Machine Learning (ML)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Las áreas irrigadas fueron detectadas y clasificadas analizando cada uno de los pixeles de la imagen satelital mediante el algoritmo Random Forest
+                  </p>
+
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html" class="btn-link">
+                    <span class="span">Conocer más</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <div class="features-content">
+
+            <h2 class="h2 section-title">¿Cómo se realizaron los análisis?</h2>
+
+            <p class="section-text">
+              El primer paso fue obtener datos para la entrenamiento y posterior validación del algoritmo. Posteriormente, fue necesario obtener una escena completa del estado de Nuevo León, para eso se analizó un mes completo (julio de 2024). Y mediante los datos de entrenamiento se detectaron las áreas irrigadas de cada uno de los municipios. 
+            </p>
+
+            <ul class="features-list">
+
+              <li class="features-item">
+                <img src="./assets/images/map-point-rotate-svgrepo-com.svg" width="26" height="26" loading="lazy" aria-hidden="true"
+                  class="item-icon">
+
+                <h3 class="item-title">Se utilizaron 90,609 puntos de entrenamiento.</h3>
+              </li>
+
+              <li class="features-item">
+                <img src="./assets/images/specificity-svgrepo-com.svg" width="26" height="26" loading="lazy" aria-hidden="true"
+                  class="item-icon">
+
+                <h3 class="item-title">La precisión del modelo fue de 83% (Kappa = 0.83)</h3>
+              </li>
+
+              <li class="features-item">
+                <img src="./assets/images/distance-to-travel-between-two-points-svgrepo-com.svg" width="26" height="26" loading="lazy" aria-hidden="true"
+                  class="item-icon">
+
+                <h3 class="item-title">64,156 kilómetros cuadrados analizados </h3>
+              </li>
+
+              <li class="features-item">
+                <img src="./assets/images/tree-evergreen-svgrepo-com.svg" width="26" height="26" loading="lazy" aria-hidden="true"
+                  class="item-icon">
+
+                <h3 class="item-title">Se pudo discriminar de manera correcta los indices de vegetación de la zona forestal y las áreas irrigadas. </h3>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="banner-wrapper">
+
+            <figure class="features-banner one">
+              <img src="./assets/images/applicacion.png" width="500" height="10000" loading="lazy"
+                alt="features image" class="w-100">
+            </figure>
+
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+      
+
+
+      <section class="section app">
+        <div class="container">
+
+          <div class="app-content">
+
+            <h2 class="h2 section-title">La importancia del riego de pivote central en la detección de áreas irrigadas</h2>
+
+            <p class="section-text">
+              Las tierras agrícolas con riego de pivote central son perfectas para la obtención de puntos de control ya que los valores de reflectancia de estas zonas corresponden de manera exacta con áreas irrigadas. De esta manera eliminamos ruido en los valores de reflectancia que pueda surgir de otras coberturas del suelo.              
+            </p>
+
+            <div class="btn-group">
+
+              
+
+              
+
+            </div>
+
+          </div>
+
+          <figure class="app-banner">
+            <img src="./assets/images/pivote.png" width="748" height="536" loading="lazy" alt="app screenshot"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <h2 class="h2 section-title">Factores que influyen al momento de detectar áreas irrigadas mediante imágenes satelitales</h2>
+
+          <p class="section-text">
+            Son 4 los factores que mas influyen al momento de detectar áreas irrigadas:
+          </p>
+
+          <ul class="about-list">
+
+            <li>
+              <div class="about-card about-card-1">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/satelite-svgrepo-com.svg" width="94" height="94" loading="lazy"
+                    alt="Automated Ticket Routing">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Valores de  reflectancia</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Es muy común que coberturas de suelo como el bosque o zonas agrícolas tengan valores de reflectancia similares por lo que a la hora de clasificarlas pueden haber errores. Sin embargo, con los datos de entrenamiento obtenidos a partir de las zonas con riego central este problema fue solucionado.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-2">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/random-svgrepo-com.svg" width="94" height="94" loading="lazy"
+                    alt="Workflow Automation">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Los datos de entrenamiento deben de ser de calidad</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Los datos de entrenamiento deben de ser de calidad y ademas, los datos deben de ser lo suficientemente grandes para que el algoritmo pueda comprender cada una de las características de cada uso de suelo 
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-3">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/mountain-svgrepo-com.svg" width="94" height="94" loading="lazy"
+                    alt="Automated Callback">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">La altitud sobre el nivel del mar</a>
+                  </h3>
+
+                  <p class="card-text">
+                    En muchas ocasiones cuando se hacen clasificaciones supervisadas no se incluyen valores de altitud. Pero esto es fundamental para la diferenciación de coberturas con valores de reflectancia similares.
+
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card about-card-4">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/water-drop-svgrepo-com.svg" width="94" height="94" loading="lazy"
+                    alt="Customer Feedback Surveys">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mayor entrenamiento no siempre significa que los resultados serán mejores</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Para este caso, se utilizaron 200 arboles de decisión. Con este valor fue con el que obtuvimos mejores resultados.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="section-text">
+           PRÓXIMAMENTE: se desarrollará una plataforma web para detectar las coordenadas de las áreas irrigadas mediante la utilización de redes neuronales convolucionales y visión artificial. 
+            <a href="#" class="btn-link">
+              <span class="span">Acceder a la plataforma interactiva            </span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </p>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+     
+
+
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      
+
+
+
+
+
+      
